@@ -1,6 +1,5 @@
 # Pasta de chaves e arquivos sensíveis
 /temp/*
-!/temp/.gitkeep
 
 # Arquivo de ambiente
 .env
