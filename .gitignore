@@ -1,0 +1,21 @@
+# Pasta de chaves e arquivos sensíveis
+/temp/*
+!/temp/.gitkeep
+
+# Arquivo de ambiente
+.env
+
+# IDE e sistema
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Backup
+*.bak
+*~
