@@ -26,7 +26,8 @@ if (file_exists($envFile)) {
 
 // Ambiente e URL
 define('ENVIRONMENT', getenv('ENVIRONMENT') ?: 'development');
-define('BASE_URL', getenv('BASE_URL') ?: 'http://localhost/setas-web/');
+$baseUrl = getenv('BASE_URL') ?: 'http://localhost/setas-web/';
+define('BASE_URL', rtrim($baseUrl, '/') . '/');
 
 // Configurações do Banco de Dados
 define('DB_HOST', getenv('DB_HOST') ?: 'localhost');

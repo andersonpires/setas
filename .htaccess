@@ -1,5 +1,5 @@
 RewriteEngine On
-RewriteBase /setas-web/
+RewriteBase /
 
 # Se for um arquivo ou diretório existente, não reescrever
 RewriteCond %{REQUEST_FILENAME} !-f

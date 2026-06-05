@@ -1,7 +1,7 @@
 FROM php:8.2-apache
 
-# Habilitar mod_rewrite do Apache
-RUN a2enmod rewrite
+# Habilitar mod_rewrite do Apache e definir ServerName para evitar warnings
+RUN a2enmod rewrite && echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 # Instalar dependências de sistema e extensões do PHP necessárias
 RUN apt-get update && apt-get install -y \
