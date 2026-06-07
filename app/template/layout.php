@@ -28,7 +28,7 @@ $menuItems = !empty($menuItems) ? $menuItems : $defaultMenu;
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="<?= BASE_URL ?>assets/css/app.css" rel="stylesheet">
+  <link href="<?= BASE_URL ?>assets/css/app.css?v=<?= filemtime(BASE_PATH . '/assets/css/app.css') ?>" rel="stylesheet">
 </head>
 <body>
   <div id="loadingOverlay" class="loading-overlay" aria-hidden="true">
