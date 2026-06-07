@@ -31,10 +31,16 @@ if (!empty($_SESSION['colaborador_id'])) {
     <?php endif; ?>
     <?php if (file_exists(BASE_PATH . '/assets/logo_sistema/logo.png')): ?>
       <a href="<?= BASE_URL ?>home" class="navbar-logo-link">
-        <picture>
+        <picture class="logo-light">
           <source media="(max-width: 768px)" srcset="<?= BASE_URL ?>assets/logo_sistema/logo-mobile.png">
           <img src="<?= BASE_URL ?>assets/logo_sistema/logo.png" alt="SETAS-WEB" class="navbar-logo">
         </picture>
+        <?php if (file_exists(BASE_PATH . '/assets/logo_sistema/logo-darkmode.png')): ?>
+        <picture class="logo-dark">
+          <source media="(max-width: 768px)" srcset="<?= BASE_URL ?>assets/logo_sistema/logo-mobile.png">
+          <img src="<?= BASE_URL ?>assets/logo_sistema/logo-darkmode.png" alt="SETAS-WEB" class="navbar-logo">
+        </picture>
+        <?php endif; ?>
       </a>
     <?php endif; ?>
   </div>

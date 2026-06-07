@@ -268,6 +268,18 @@ body {
   width: auto;
 }
 
+.logo-dark {
+  display: none;
+}
+
+[data-theme="dark"] .logo-light {
+  display: none;
+}
+
+[data-theme="dark"] .logo-dark {
+  display: block;
+}
+
 .navbar-brand {
   position: absolute;
   left: 50%;
